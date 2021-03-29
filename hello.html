@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a onclick="a()">
+    vào trang chủ
+</a>
+
+<script>
+    function a(){
+        let x = localStorage.getItem("list").split(",").length;
+        alert("Xin chào, bạn có "+ x+ " cong viec");
+        window.location="/demolocalStoratge/index.html";
+    }
+</script>
+</body>
+</html>
